@@ -1,1 +1,8 @@
 elasticsearch>=8.0.0,<9
+
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python -c "import elasticsearch, sys; print('OK', elasticsearch.__version__)"
